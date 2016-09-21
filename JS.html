@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript">
+		<!--
+			function sayHello() {
+			alert("Hello World")
+			}
+			function mouseOver() {
+			document.getElementById("demo").style.color="red";
+			}
+			function mouseOut() {
+			document.getElementById("demo").style.color="black";
+			}
+		//-->
+</script>
+</head>
+
+<body>
+<h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()"> Look at me!</h1>
+<p> Click on me! </p>
+<form>
+			<input type="button" onclick="sayHello()" value="Say Hello" />
+			<br></br>
+			<td><input type="text" placeholder="Search..."</td>
+            <td><input value="Search" type="Submit"</td>
+</form>
+<br> </br>
+ <form>
+ <select id="mySelect">
+ <option> EDM </option>
+ <option> Rap </option>
+ <option> Country </option>
+ <option> Rock </option>
+ </select>
+ </form> 
+ <br> </br>
+ <form id="contactus">
+    	<fieldset>
+    		<label for="name">Name:</label>
+    			<input id="name" type="text" name="name" autofocus required>
+				<br></br>
+    		<label for="email">Email:</label>
+    			<input id="email" type="email" name="email" required>
+				<br></br>
+    		<label for="phone">Phone:</label>
+    			<input id="phone" type="tel" name="phone" required>
+				<br></br>
+    		<label for="status">Status:			
+    			<select id="status" name="status" required>
+    				<option value="client">Student</option>
+    				<option value="partner">Professor</option>
+    				
+    			</select>
+    		</label>
+    		
+    		
+				<br></br>
+    		</label>
+    		<label for="msg">Message:</label>
+			<br></br>
+    			<textarea id="msg" name="msg" rows="10" cols="30" required></textarea>
+    		</fieldset>
+    		<fieldset>
+    		<button type="submit">Send</button>
+    		<button type="reset">Reset</button>
+    		</fieldset>
+    </form>
+</body>
+</html>
