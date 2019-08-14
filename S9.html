@@ -2,7 +2,7 @@
 <HTML>
       <HEAD>
             <TITLE> <S9 TEST> </TITLE>
-
+		    <script src="accountnumber.js"></script>
 	</HEAD>
   <BODY>
 	<form id="datainput">
@@ -11,7 +11,7 @@
 			<input id="amount" type="number" name="amount" required>
 			<br></br>
 	  		<label for="accountnumber">Account #:</label>
-	  		<input id="accountnumber" type="number" name="accountnumber" required>
+	  		<input id="accountnumber" type="text" onkeypress="return isNumber(event)" required>
 		</fieldset>
 		<fieldset>
 			<button type="submit">Submit</button>
