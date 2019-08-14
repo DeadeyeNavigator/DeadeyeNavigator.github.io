@@ -8,7 +8,7 @@
 	<form id="datainput">
 		<fieldset>
 		        <label for="amount">Amount:</label>
-			<input id="amount" type="number" name="amount" required>
+			<input id="amount" type="text" onkeypress="return isNumber(event)" required>
 			<br></br>
 	  		<label for="accountnumber">Account #:</label>
 	  		<input id="accountnumber" type="text" onkeypress="return isNumber(event)" required>
